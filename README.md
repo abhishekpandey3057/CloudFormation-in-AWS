@@ -2,15 +2,13 @@ AWS CloudFormation Template for Serverless CRUD Application
 
 This repository contains a CloudFormation template (template.yaml) and a Python-based Lambda function (index.py) for setting up a serverless CRUD (Create, Read, Update, Delete) application on AWS. The template automates the creation of AWS Lambda functions, API Gateway endpoints, IAM roles, and DynamoDB tables necessary for managing student records.
 
-Features:
+Features: Lambda Function: Executes CRUD operations on DynamoDB via API Gateway.
 
-Lambda Function: Executes CRUD operations on DynamoDB via API Gateway.
+          API Gateway: Provides endpoints for interacting with student records.
 
-API Gateway: Provides endpoints for interacting with student records.
+          IAM Roles: Manages permissions for Lambda functions to interact with other AWS services.
 
-IAM Roles: Manages permissions for Lambda functions to interact with other AWS services.
-
-DynamoDB Table: Stores student information including StudentID, StudentName, and Department.
+          DynamoDB Table: Stores student information including StudentID, StudentName, and Department.
 
 
 Usage:
